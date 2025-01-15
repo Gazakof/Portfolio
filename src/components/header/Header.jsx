@@ -9,9 +9,9 @@ const Header = () => {
           Ezra
         </a>
         <div className="nav__menu">
-          <ul className="nav__list grid">
+          <ul className="nav__list">
             <li className="nav__item">
-              <a href="#home" className="nav__link">
+              <a href="#home" className="nav__link active-link">
                 !icon! Home
               </a>
             </li>
@@ -41,7 +41,8 @@ const Header = () => {
               </a>
             </li>
           </ul>
-          !icon!
+
+          <div className="nav__close">!icon! </div>
         </div>
 
         <div className="nav__toggle">!icon!</div>
