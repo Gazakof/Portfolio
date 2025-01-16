@@ -181,12 +181,18 @@ img {
 }
 
 @media screen and (max-width: 768px) {
+  .section {
+    padding: 2rem 0 4rem;
+  }
 }
 
 @media screen and (max-width: 576px) {
 }
 
 @media screen and (max-width: 350px) {
+  :root {
+    --big-font-size: 2rem;
+  }
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);

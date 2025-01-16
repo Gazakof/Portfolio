@@ -49,6 +49,12 @@
 }
 
 @media screen and (max-width: 768px) {
+  .nav__list {
+    gap: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
   .header {
     top: initial;
     bottom: 0;
