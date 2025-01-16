@@ -1,51 +1,61 @@
-import React from "react";
+import React, { useState } from "react";
 import "./header.css";
+import { CiHome, CiImageOn } from "react-icons/ci";
+import { GoPerson } from "react-icons/go";
+import { LuFileSpreadsheet, LuSend } from "react-icons/lu";
+import { FaBriefcase } from "react-icons/fa6";
+import { IoClose } from "react-icons/io5";
+import { TiThMenuOutline } from "react-icons/ti";
 
 const Header = () => {
+  const [menu, showMenu] = useState(false);
+
   return (
     <header className="header">
       <nav className="nav container">
         <a href="index.html" className="nav__logo">
           Ezra
         </a>
-        <div className="nav__menu">
+        <div className={menu ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__list">
             <li className="nav__item">
               <a href="#home" className="nav__link active-link">
-                !icon! Home
+                <CiHome className="nav__icon" /> Home
               </a>
             </li>
             <li className="nav__item">
               <a href="#about" className="nav__link">
-                !icon! About
+                <GoPerson className="nav__icon" /> About
               </a>
             </li>
             <li className="nav__item">
               <a href="#skills" className="nav__link">
-                !icon! Skills
+                <LuFileSpreadsheet className="nav__icon" /> Skills
               </a>
             </li>
             <li className="nav__item">
               <a href="#services" className="nav__link">
-                !icon! Services
+                <FaBriefcase className="nav__icon" /> Services
               </a>
             </li>
             <li className="nav__item">
               <a href="#portfolio" className="nav__link">
-                !icon! Portfolio
+                <CiImageOn className="nav__icon" /> Portfolio
               </a>
             </li>
             <li className="nav__item">
               <a href="#contact" className="nav__link">
-                !icon! Contact
+                <LuSend className="nav__icon" /> Contact
               </a>
             </li>
           </ul>
 
-          <div className="nav__close">!icon! </div>
+          <IoClose className="nav__close" onClick={() => showMenu(false)} />
         </div>
 
-        <div className="nav__toggle">!icon!</div>
+        <div className="nav__toggle" onClick={() => showMenu(!menu)}>
+          <TiThMenuOutline />
+        </div>
       </nav>
     </header>
   );

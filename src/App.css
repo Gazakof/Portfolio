@@ -1,4 +1,15 @@
-/* Google Font */
+@font-face {
+  font-family: "Poppins-regular";
+  src: url("./assets/fonts/Poppins-Regular.ttf") format(truetype);
+}
+@font-face {
+  font-family: "Poppins-medium";
+  src: url("./assets/fonts/Poppins-Medium.ttf") format(truetype);
+}
+@font-face {
+  font-family: "Poppins-bold";
+  src: url("./assets/fonts/Poppins-SemiBold.ttf") format(truetype);
+}
 
 * {
   margin: 0;
@@ -21,13 +32,15 @@
   --container-color: #fff;
 
   /* Font */
-  --body-font: "Poppins", sans-resif;
+  --body-font: "Poppins-regular", sans-resif;
+  --title-font: "Poppins-medium", sans-resif;
+  --bold-font: "Poppins-bold", sans-resif;
 
   --big-font-size: 3.5rem;
   --h1-font-size: 2.25rem;
   --h2-font-size: 1.5rem;
   --h3-font-size: 1.25rem;
-  --normal-fon-size: 1rem;
+  --normal-font-size: 1rem;
   --small-font-size: 0.8rem;
   --tinny-font-size: 0.65rem;
 
