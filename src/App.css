@@ -73,7 +73,7 @@
     --h3-font-size: 1rem;
     --normal-fon-size: 0.9rem;
     --small-font-size: 0.75rem;
-    --tinny-font-size: 0.6rem;
+    --tiny-font-size: 0.6rem;
   }
 }
 
@@ -155,7 +155,7 @@ img {
   display: inline-block;
   background-color: var(--title-color);
   color: var(--container-color);
-  padding: 1.25rem 2rem;
+  padding: 1rem 1.6rem;
   border-radius: 1rem;
   font-weight: var(--font-medium);
 }
