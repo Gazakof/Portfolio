@@ -13,7 +13,7 @@ const About = () => {
         <img src={AboutImg} alt="" className="about__img" />
         <div className="about__data">
           <Info />
-          <p>Frontend developer ...</p>
+          <p className="about__description">Frontend developer ...</p>
           <a download="" href={CV} className="button button__flex">
             Download CV
           </a>
