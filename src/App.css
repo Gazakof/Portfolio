@@ -42,7 +42,7 @@
   --h3-font-size: 1.25rem;
   --normal-font-size: 1rem;
   --small-font-size: 0.8rem;
-  --tinny-font-size: 0.65rem;
+  --tiny-font-size: 0.65rem;
 
   --font-normal: 400;
   --font-medium: 500;
@@ -192,6 +192,9 @@ img {
 @media screen and (max-width: 350px) {
   :root {
     --big-font-size: 2rem;
+  }
+  .section {
+    padding: 0 1rem;
   }
   .container {
     margin-left: var(--mb-1);
