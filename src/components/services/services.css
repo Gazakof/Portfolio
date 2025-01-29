@@ -1,5 +1,6 @@
 .services__container {
   grid-template-columns: repeat(2, 420px);
+  justify-content: center;
 }
 
 .services__content {
@@ -110,4 +111,43 @@
 .active-modal {
   opacity: 1;
   visibility: visible;
+}
+
+@media screen and (max-width: 992px) {
+  .services__container {
+    grid-template-columns: repeat(2, 360px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services__container {
+    grid-template-columns: repeat(2, 240px);
+  }
+  .services__content {
+    padding: 3rem 0.5rem 1rem 1.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .services__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .services__icon {
+    font-size: 1.5rem;
+  }
+  .services__modal-content {
+    padding: 3.5rem 1rem 1.5rem;
+  }
+  .services__modal-description {
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .services__container {
+    grid-template-columns: max-content;
+  }
+  .services__content {
+    padding: 5rem 4rem 3rem;
+  }
 }

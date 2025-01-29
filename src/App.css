@@ -132,7 +132,7 @@ img {
 .section__subtitle {
   display: block;
   font-size: var(--small-font-size);
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .section__title,
@@ -194,10 +194,13 @@ img {
     --big-font-size: 2rem;
   }
   .section {
-    padding: 0 1rem;
+    padding: 1rem;
   }
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
+  }
+  .section__title {
+    margin-top: 1rem;
   }
 }
