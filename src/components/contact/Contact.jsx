@@ -6,6 +6,7 @@ import {
   FaWhatsapp,
 } from "react-icons/fa6";
 import { MdOutlineEmail } from "react-icons/md";
+import { LuSend } from "react-icons/lu";
 
 const Contact = () => {
   return (
@@ -49,7 +50,43 @@ const Contact = () => {
           </div>
         </div>
         <div className="contact__content">
-          <h3>Write me your project</h3>
+          <h3 className="contact__title">Write me your project</h3>
+          <form className="contact__form">
+            <div className="contact__form-container">
+              <label className="contact__form-tag">Name</label>
+              <input
+                type="text"
+                name="name"
+                className="contact__form-input"
+                placeholder="Insert your name"
+              />
+            </div>
+
+            <div className="contact__form-container">
+              <label className="contact__form-tag">Mail</label>
+              <input
+                type="email"
+                name="email"
+                className="contact__form-input"
+                placeholder="Insert your email"
+              />
+            </div>
+
+            <div className="contact__form-container contact__form-area">
+              <label className="contact__form-tag">Project</label>
+              <textarea
+                name="project"
+                className="contact__form-input"
+                placeholder="Write our project"
+                cols={30}
+                rows={10}
+              />
+            </div>
+            <button className="button button__flex">
+              Send Message
+              <LuSend className="icon-hello" />
+            </button>
+          </form>
         </div>
       </div>
     </section>
