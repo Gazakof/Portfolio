@@ -72,19 +72,7 @@
   justify-self: center;
   width: 300px;
   height: 360px;
-  animation: profile__animate 8s ease-in-out infinite 1s;
-}
-
-@keyframes profile__animate {
-  0% {
-    border-radius: 20% 20% 30% 10%/30% 10% 20% 40%;
-  }
-  50% {
-    border-radius: 30% 20% 20% 40%/20% 20% 30% 40%;
-  }
-  100% {
-    border-radius: 20% 20% 30% 10%/30% 10% 20% 40%;
-  }
+  border-radius: 1rem;
 }
 
 @media screen and (max-width: 768px) {
