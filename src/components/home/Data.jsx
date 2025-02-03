@@ -1,5 +1,5 @@
 import React from "react";
-import { LuSend } from "react-icons/lu";
+import { LuSendHorizonal } from "react-icons/lu";
 
 const Data = () => {
   return (
@@ -10,7 +10,7 @@ const Data = () => {
       <p className="home__description">Lorem ipsum</p>
       <a href="#contact" className="button button__flex">
         Say, Hello
-        <LuSend className="icon-hello" />
+        <LuSendHorizonal className="icon-hello" />
       </a>
     </div>
   );

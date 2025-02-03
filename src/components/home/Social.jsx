@@ -4,10 +4,11 @@ import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa6";
 const Social = () => {
   return (
     <div className="home__social">
-      <a href="" className="home__social-icon" target="_blank">
-        <FaInstagram />
-      </a>
-      <a href="" className="home__social-icon" target="_blank">
+      <a
+        href="https://github.com/Gazakof"
+        className="home__social-icon"
+        target="_blank"
+      >
         <FaLinkedin />
       </a>
       <a href="" className="home__social-icon" target="_blank">
