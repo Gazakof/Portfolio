@@ -208,3 +208,27 @@ img {
     margin-top: 1rem;
   }
 }
+
+.from_none {
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.from_left,
+.from_right {
+  transition: 1.5s ease;
+}
+
+.from_left {
+  transform: translateX(-100%);
+}
+.from_right {
+  transform: translateX(100%);
+}
+
+.loaded .from_none,
+.loaded .from_left,
+.loaded .from_right {
+  opacity: 1;
+  transform: translateX(0);
+}
