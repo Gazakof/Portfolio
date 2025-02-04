@@ -25,9 +25,9 @@
   /* Color: Hue, Saturation, Lightness */
   --hue: 0;
   --sat: 0%;
-  --title-color: hsl(var(--hue), var(--sat), 20%);
+  --title-color: hsl(var(--hue), var(--sat), 15%);
   --title-color-dark: hsl(var(--hue), var(--sat), 0%);
-  --text-color: hsl(var(--hue), var(--sat), 45%);
+  --text-color: hsl(var(--hue), var(--sat), 30%);
   --body-color: hsl(var(--hue), var(--sat), 95%);
   --container-color: #fff;
 

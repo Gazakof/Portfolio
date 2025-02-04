@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./services.css";
 import { FaArrowRightLong, FaCode } from "react-icons/fa6";
 import { IoClose } from "react-icons/io5";
@@ -10,13 +10,46 @@ const Services = () => {
   const toggleTab = (index) => {
     setToggleState(index);
   };
+
+  const containerRef = useRef();
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const obesver = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+        } else {
+          setIsVisible(false);
+        }
+      },
+      {
+        threshold: 0.4,
+      }
+    );
+
+    if (containerRef.current) {
+      obesver.observe(containerRef.current);
+    }
+
+    return () => {
+      if (containerRef.current) {
+        obesver.unobserve(containerRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <section className="services section" id="services">
-      <h2 className="section__title">Services</h2>
-      <span className="section__subtitle"> What I offer</span>
+    <section
+      className={`services section ${isVisible ? "loaded" : ""}`}
+      id="services"
+      ref={containerRef}
+    >
+      <h2 className="section__title from_none">Services</h2>
+      <span className="section__subtitle from_none"> What I offer</span>
       <div className="services__container container grid">
         <div className="services__content">
-          <div>
+          <div className="from_left">
             <FaCode className="services__icon" />
             <h3 className="services__title">
               Develop <br />
@@ -24,7 +57,7 @@ const Services = () => {
             </h3>
           </div>
           <span
-            className="services__button"
+            className="services__button from_left"
             onClick={() => {
               toggleTab(1);
             }}
@@ -83,7 +116,7 @@ const Services = () => {
         </div>
 
         <div className="services__content">
-          <div>
+          <div className="from_right">
             <LuQrCode className="services__icon" />
             <h3 className="services__title">
               {" "}
@@ -92,7 +125,7 @@ const Services = () => {
             </h3>
           </div>
           <span
-            className="services__button"
+            className="services__button from_right"
             onClick={() => {
               toggleTab(2);
             }}
