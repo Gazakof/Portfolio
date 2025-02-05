@@ -55,7 +55,7 @@ const Contact = () => {
         }
       },
       {
-        threshold: 0.4,
+        threshold: 0.2,
       }
     );
 
@@ -76,11 +76,11 @@ const Contact = () => {
       id="contact"
       ref={containerRef}
     >
-      <h2 className="section__title from_none">Get in touch</h2>
+      <h2 className="section__title from_top from_none">Get in touch</h2>
       <span className="section__subtitle from_none">Contact me</span>
 
-      <div className="contact__container container grid">
-        <div className="contact__content from_left from_none">
+      <div className="contact__container container grid from_bottom from_none">
+        <div className="contact__content">
           <h3 className="contact__title">Talk to me</h3>
           <div className="contact__info">
             <div className="contact__card">
@@ -128,7 +128,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="contact__content from_right from_none">
+        <div className="contact__content">
           <h3 className="contact__title">Write me your project</h3>
 
           <form

@@ -45,7 +45,7 @@ const Services = () => {
       id="services"
       ref={containerRef}
     >
-      <h2 className="section__title from_none">Services</h2>
+      <h2 className="section__title from_none from_top">Services</h2>
       <span className="section__subtitle from_none"> What I offer</span>
       <div className="services__container container grid">
         <div className="services__content">

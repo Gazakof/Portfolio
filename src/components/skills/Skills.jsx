@@ -36,7 +36,7 @@ const Skills = () => {
       id="skills"
       ref={containerRef}
     >
-      <h2 className="section__title from_none">Skills</h2>
+      <h2 className="section__title from_none from_bottom">Skills</h2>
       <span className="section__subtitle from_none">My technical level</span>
       <div className="skills__container container grid from_none">
         <Front />

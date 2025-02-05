@@ -36,10 +36,10 @@ const Studies = () => {
       id="studies"
       ref={containerRef}
     >
-      <h2 className="section__title from_none">Studies</h2>
+      <h2 className="section__title from_none from_bottom">Studies</h2>
       <span className="section__subtitle from_none">My pesonal journey</span>
 
-      <div className="studies__container container from_none">
+      <div className="studies__container container from_bottom from_none">
         <div className="studies__tabs">
           <div className="studies__button button__flex">
             <GiGraduateCap />

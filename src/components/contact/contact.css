@@ -120,6 +120,15 @@
   .contact__info {
     grid-template-columns: 1fr;
   }
+  .contact__card {
+    padding: 0.25rem 1rem;
+  }
+  .contact__card-title {
+    display: none;
+  }
+  .contact__card-data {
+    margin-bottom: 0.2rem;
+  }
   .contact__form {
     width: 100%;
   }

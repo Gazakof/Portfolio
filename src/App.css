@@ -214,11 +214,19 @@ img {
   transition: 0.5s ease;
 }
 
+.from_top,
+.from_bottom,
 .from_left,
 .from_right {
   transition: 1.5s ease;
 }
 
+.from_top {
+  transform: translateY(-100%);
+}
+.from_bottom {
+  transform: translateY(100%);
+}
 .from_left {
   transform: translateX(-100%);
 }
@@ -227,6 +235,8 @@ img {
 }
 
 .loaded .from_none,
+.loaded .from_top,
+.loaded .from_bottom,
 .loaded .from_left,
 .loaded .from_right {
   opacity: 1;

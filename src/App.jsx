@@ -6,6 +6,7 @@ import Skills from "./components/skills/Skills";
 import Services from "./components/services/services";
 import Studies from "./components/studies/Studies";
 import Contact from "./components/contact/Contact";
+import Projects from "./components/projects/Projects";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Studies />
         <Skills />
         <Services />
+        <Projects />
         <Contact />
       </main>
     </div>
