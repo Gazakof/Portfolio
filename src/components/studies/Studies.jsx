@@ -76,14 +76,21 @@ const Studies = () => {
 
           <div className="studies__data">
             <div className="from_left">
-              <h3 className="studies__title">English for Specific Purpose</h3>
+              <h3 className="studies__title">
+                Bachelor's degree in
+                <span> "English for Specific Purpose" </span>
+              </h3>
               <div className="studies__dep">
                 <div className="studies__ankatso"></div>
                 <span className="studies__subtitle">
                   Université d'Antananarivo
                 </span>
               </div>
-              <p className="studies__description">Lorem</p>
+              <p className="studies__description">
+                Focused on applied English in professional contexts, <br />
+                including Literature, Communication, Marketing, <br />
+                Leadership and Business English
+              </p>
               <div className="studies__calendar">
                 <IoIosCalendar className="studies__icon" />
                 2018 - 2021

@@ -35,6 +35,9 @@
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
 }
+.studies__title span {
+  font-style: italic;
+}
 
 .studies__subtitle {
   display: inline-block;
@@ -45,10 +48,12 @@
 
 .studies__description {
   font-style: italic;
+  margin-bottom: var(--mb-0-75);
 }
 
 .studies__calendar {
   font-size: var(--small-font-size);
+  color: var(--title-color);
   display: flex;
   align-items: center;
 }

@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import "./header.css";
 import { CiHome, CiImageOn } from "react-icons/ci";
 import { GoPerson } from "react-icons/go";
-import { LuFileSpreadsheet, LuSend } from "react-icons/lu";
+import { LuSend } from "react-icons/lu";
 import { FaBriefcase } from "react-icons/fa6";
 import { IoClose } from "react-icons/io5";
 import { TiThMenuOutline } from "react-icons/ti";
+import { LiaFileDownloadSolid } from "react-icons/lia";
+import CV from "../../assets/CV.pdf";
 
 const Header = () => {
   const [menu, showMenu] = useState(false);
@@ -29,11 +31,6 @@ const Header = () => {
               </a>
             </li>
             <li className="nav__item">
-              <a href="#skills" className="nav__link">
-                <LuFileSpreadsheet className="nav__icon" /> Skills
-              </a>
-            </li>
-            <li className="nav__item">
               <a href="#services" className="nav__link">
                 <FaBriefcase className="nav__icon" /> Services
               </a>
@@ -46,6 +43,12 @@ const Header = () => {
             <li className="nav__item">
               <a href="#contact" className="nav__link">
                 <LuSend className="nav__icon" /> Contact
+              </a>
+            </li>
+            <li className="nav__item">
+              <a download="" href={CV} className="button__download">
+                <p>Download CV</p>
+                <LiaFileDownloadSolid className="icon__download" />
               </a>
             </li>
           </ul>
