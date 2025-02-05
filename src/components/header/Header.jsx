@@ -39,7 +39,7 @@ const Header = () => {
               </a>
             </li>
             <li className="nav__item">
-              <a href="#portfolio" className="nav__link">
+              <a href="#projects" className="nav__link">
                 <CiImageOn className="nav__icon" /> Projects
               </a>
             </li>

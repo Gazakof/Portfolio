@@ -15,7 +15,7 @@ const Services = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const obesver = new IntersectionObserver(
+    const obeserver = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
@@ -29,12 +29,12 @@ const Services = () => {
     );
 
     if (containerRef.current) {
-      obesver.observe(containerRef.current);
+      obeserver.observe(containerRef.current);
     }
 
     return () => {
       if (containerRef.current) {
-        obesver.unobserve(containerRef.current);
+        obeserver.unobserve(containerRef.current);
       }
     };
   }, []);
@@ -49,7 +49,7 @@ const Services = () => {
       <span className="section__subtitle from_none"> What I offer</span>
       <div className="services__container container grid">
         <div className="services__content">
-          <div className="from_left">
+          <div className="from_left from_none">
             <FaCode className="services__icon" />
             <h3 className="services__title">
               Develop <br />
@@ -57,7 +57,7 @@ const Services = () => {
             </h3>
           </div>
           <span
-            className="services__button from_left"
+            className="services__button from_left from_none"
             onClick={() => {
               toggleTab(1);
             }}
@@ -81,33 +81,30 @@ const Services = () => {
                 }}
               />
               <h3 className="services__modal-title">Develop Website</h3>
-              <p className="services__modal-description">
-                {" "}
-                Lorem Service with more than 3 ...
-              </p>
+              <p className="services__modal-description"> </p>
               <ul className="services__modal-services grid">
                 <li className="services__modal-service">
                   <LiaCheckCircle className="services__modal-icon" />
                   <p className="dervices__modal-info">
-                    I develop the user interface
+                    I build interactive and dynamic web application
                   </p>
                 </li>
                 <li className="services__modal-service">
                   <LiaCheckCircle className="services__modal-icon" />
                   <p className="dervices__modal-info">
-                    I develop the user interface
+                    I design responsive websites
                   </p>
                 </li>
                 <li className="services__modal-service">
                   <LiaCheckCircle className="services__modal-icon" />
                   <p className="dervices__modal-info">
-                    I develop the user interface
+                    I integrate APIs to connect frontend and backend services
                   </p>
                 </li>
                 <li className="services__modal-service">
                   <LiaCheckCircle className="services__modal-icon" />
                   <p className="dervices__modal-info">
-                    I develop the user interface
+                    I optimize website performance for speed and efficiency
                   </p>
                 </li>
               </ul>
@@ -116,7 +113,7 @@ const Services = () => {
         </div>
 
         <div className="services__content">
-          <div className="from_right">
+          <div className="from_right from_none">
             <LuQrCode className="services__icon" />
             <h3 className="services__title">
               {" "}
@@ -125,7 +122,7 @@ const Services = () => {
             </h3>
           </div>
           <span
-            className="services__button from_right"
+            className="services__button from_right from_none"
             onClick={() => {
               toggleTab(2);
             }}
@@ -149,33 +146,31 @@ const Services = () => {
                 }}
               />
               <h3 className="services__modal-title">Develop App</h3>
-              <p className="services__modal-description">
-                {" "}
-                Lorem Service with more than 3 ...
-              </p>
+              <p className="services__modal-description"> </p>
               <ul className="services__modal-services grid">
                 <li className="services__modal-service">
                   <LiaCheckCircle className="services__modal-icon" />
                   <p className="dervices__modal-info">
-                    I develop the user interface
+                    I creat cross-platform mobile apps
                   </p>
                 </li>
                 <li className="services__modal-service">
                   <LiaCheckCircle className="services__modal-icon" />
                   <p className="dervices__modal-info">
-                    I develop the user interface
+                    I design mobile UI/UX for smooth interactions
                   </p>
                 </li>
                 <li className="services__modal-service">
                   <LiaCheckCircle className="services__modal-icon" />
                   <p className="dervices__modal-info">
-                    I develop the user interface
+                    I integrate APIs and databases for real-time fonctionality
                   </p>
                 </li>
                 <li className="services__modal-service">
                   <LiaCheckCircle className="services__modal-icon" />
                   <p className="dervices__modal-info">
-                    I develop the user interface
+                    I optimize mobile app performance for better speed and
+                    efficiency
                   </p>
                 </li>
               </ul>

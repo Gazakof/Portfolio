@@ -56,9 +56,17 @@ const Studies = () => {
               <span className="studies__line"></span>
             </div>
             <div className="from_right">
-              <h3 className="studies__title">Informatique</h3>
-              <span className="studies__subtitle">ISPM</span>
-              <p className="studies__description">Lorem</p>
+              <h3 className="studies__title">Computer Science</h3>
+              <div className="studies__dep">
+                <div className="studies__ispm"></div>
+                <span className="studies__subtitle">
+                  Institution Supérieur Polytechnique de Madagascar
+                </span>
+              </div>
+              <p className="studies__description">
+                Computer Science, Multimedia, Information and <br />{" "}
+                Communication Technology, and Artificial Intelligence
+              </p>
               <div className="studies__calendar">
                 <IoIosCalendar className="studies__icon" />
                 2021 - 2024
@@ -69,9 +77,12 @@ const Studies = () => {
           <div className="studies__data">
             <div className="from_left">
               <h3 className="studies__title">English for Specific Purpose</h3>
-              <span className="studies__subtitle">
-                Université d'Antananarivo
-              </span>
+              <div className="studies__dep">
+                <div className="studies__ankatso"></div>
+                <span className="studies__subtitle">
+                  Université d'Antananarivo
+                </span>
+              </div>
               <p className="studies__description">Lorem</p>
               <div className="studies__calendar">
                 <IoIosCalendar className="studies__icon" />
@@ -91,9 +102,9 @@ const Studies = () => {
               <span className="studies__line"></span>
             </div>
             <div className="from_right">
-              <h3 className="studies__title">Bacc</h3>
+              <h3 className="studies__title">Baccalauréat</h3>
               <span className="studies__subtitle">Lycée Nanisana</span>
-              <p className="studies__description">Lorem</p>
+              <p className="studies__description">Science Stream (Series D)</p>
               <div className="studies__calendar">
                 <IoIosCalendar className="studies__icon" />
                 2017 - 2018

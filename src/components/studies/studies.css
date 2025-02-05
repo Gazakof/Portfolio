@@ -38,14 +38,43 @@
 
 .studies__subtitle {
   display: inline-block;
-  font-size: var(--small-font-size);
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-semi-bold);
   margin-bottom: var(--mb-1);
+}
+
+.studies__description {
+  font-style: italic;
 }
 
 .studies__calendar {
   font-size: var(--small-font-size);
   display: flex;
   align-items: center;
+}
+
+.studies__dep {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+.studies__ankatso {
+  background: url(../../assets/img/ankatso.png);
+}
+
+.studies__ispm {
+  background: url(../../assets/img/ispm.png);
+}
+
+.studies__ankatso,
+.studies__ispm {
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .studies__rounder {
