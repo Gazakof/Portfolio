@@ -3,7 +3,7 @@ import Header from "./components/header/Header";
 import "./App.css";
 import Home from "./components/home/Home";
 import Skills from "./components/skills/Skills";
-import Services from "./components/services/services";
+import Services from "./components/services/Services";
 import Studies from "./components/studies/Studies";
 import Contact from "./components/contact/Contact";
 import Projects from "./components/projects/Projects";
