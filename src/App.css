@@ -15,7 +15,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #000;
 }
 
 :root {
@@ -143,20 +142,19 @@ img {
 }
 
 .button {
-  display: inline-block;
+  display: flex;
+  width: fit-content;
+  height: fit-content;
   background-color: var(--color-btn);
   color: #fff;
   padding: 1rem 2rem;
   border-radius: 1rem;
   font-weight: var(--font-medium);
+  align-items: center;
 }
 
 .button:hover {
   background-color: var(--color-text);
-}
-
-.button__icon {
-  margin-left: 0.5rem;
 }
 
 .button__felx {

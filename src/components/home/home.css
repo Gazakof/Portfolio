@@ -76,6 +76,10 @@
   border-radius: 0.25rem;
 }
 
+.icon-send {
+  margin-left: 5px;
+}
+
 @media screen and (max-width: 768px) {
   .home__container {
     row-gap: 1.5rem;

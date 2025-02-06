@@ -53,6 +53,9 @@
   font-weight: var(--font-medium);
   transition: 0.3s ease;
 }
+.button__download p {
+  color: var(--color-box);
+}
 
 .button__download:hover {
   box-shadow: var(--box-shadow);
@@ -104,9 +107,8 @@
     left: 0;
     width: 100%;
     background-color: var(--color-bg);
-    padding: 2rem 1.5rem 4rem;
+    padding: 1rem 2rem 1rem 0.5rem;
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.2);
-    border-radius: 1.5rem 1.5rem 0 0;
     transition: 0.3s;
   }
 
@@ -117,15 +119,21 @@
   .nav__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    gap: 0.5rem;
+  }
+  .nav__link {
+    font-size: 0.75rem;
   }
   .nav__icon {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+  }
+  .button__download {
+    font-size: 0.75rem;
   }
   .nav__close {
     position: absolute;
-    right: 1.3rem;
-    bottom: 0.5rem;
+    right: 0.75rem;
+    bottom: 5rem;
     font-size: 1.5rem;
     cursor: pointer;
     color: var(--color-text);

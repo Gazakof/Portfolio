@@ -52,7 +52,7 @@
 .center {
   width: 540px;
   height: fit-content;
-  background-color: var(--body-color);
+  background-color: var(--color-bg);
   z-index: 5;
   box-shadow: 0 5px 8px rgba(0, 0, 0, 0.6);
   transition: 0.3s ease-in-out;
@@ -76,18 +76,18 @@
 .projects__buttonP,
 .projects__buttonN {
   font-size: 1.5rem;
-  color: var(--text-color);
+  color: var(--color-icon);
   transition: 0.3s;
   cursor: pointer;
 }
 
 .projects__buttonP:hover {
   transform: scale(1.2) translateX(-5px);
-  color: var(--title-color);
+  color: var(--color-title);
 }
 .projects__buttonN:hover {
   transform: scale(1.2) translateX(5px);
-  color: var(--title-color);
+  color: var(--color-title);
 }
 
 @media screen and (max-width: 768px) {

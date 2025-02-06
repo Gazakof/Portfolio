@@ -12,8 +12,8 @@ const Data = () => {
         high-performing digital solutions.
       </p>
       <a href="#contact" className="button button__flex">
-        Say, Hello
-        <LuSendHorizonal className="icon-hello" />
+        <p>Say, Hello </p>
+        <LuSendHorizonal className="icon-send" />
       </a>
     </div>
   );

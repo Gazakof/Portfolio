@@ -1,10 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./contact.css";
-import {
-  FaArrowRightLong,
-  FaFacebookMessenger,
-  FaWhatsapp,
-} from "react-icons/fa6";
+import { FaArrowRightLong, FaWhatsapp } from "react-icons/fa6";
 import { MdOutlineEmail } from "react-icons/md";
 import { LuSendHorizonal } from "react-icons/lu";
 
@@ -25,7 +21,7 @@ const Contact = () => {
     e.preventDefault();
 
     const form = new FormData();
-    form.append("formulaire", "contact");
+    form.append("form-name", "contact");
     Object.keys(formData).forEach((key) => {
       form.append(key, formData[key]);
     });
@@ -33,7 +29,7 @@ const Contact = () => {
     try {
       await fetch("/", {
         method: "POST",
-        body: "form",
+        body: form,
       });
       setSubmitted(true);
       setFormData({ name: "", email: "", message: "" });
@@ -111,20 +107,6 @@ const Contact = () => {
                 <FaArrowRightLong className="contact__button-icon" />
               </a>
             </div>
-
-            <div className="contact__card">
-              <FaFacebookMessenger className="contact__card-icon" />
-              <h3 className="contact__card-title">Messenger</h3>
-              <span className="contact__card-data">Ezra R-Sata</span>
-              <a
-                href="https://m.me/Ezra_R-Sata"
-                target="_blank"
-                className="contact__button"
-              >
-                Write me
-                <FaArrowRightLong className="contact__button-icon" />
-              </a>
-            </div>
           </div>
         </div>
 
@@ -138,7 +120,7 @@ const Contact = () => {
             className="contact__form"
             onSubmit={handleSubmit}
           >
-            <input type="hidden" name="formulaire" value="contact" />
+            <input type="hidden" name="form-name" value="contact" />
             <div className="contact__form-container">
               <label htmlFor="name" className="contact__form-tag">
                 Name
@@ -192,6 +174,16 @@ const Contact = () => {
               <LuSendHorizonal className="icon-hello" />
             </button>
           </form>
+          {submitted && (
+            <p
+              style={{
+                color: "green",
+                marginTop: "1rem",
+              }}
+            >
+              Thank you! Your message has been sent.
+            </p>
+          )}
         </div>
       </div>
     </section>
