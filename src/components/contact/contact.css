@@ -103,22 +103,22 @@
   resize: none;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   .contact__container {
-    grid-template-columns: 1fr;
-    column-gap: 3rem;
-  }
-  .contact__info {
-    justify-content: center;
-  }
-  .contact__form {
-    margin: 0 auto;
+    gap: 2rem;
   }
 }
 
 @media screen and (max-width: 576px) {
+  .contact__container {
+    display: block;
+    margin: 10px 10%;
+  }
+  .contact__content {
+    margin-bottom: 2rem;
+  }
   .contact__info {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(300px, 1fr);
   }
   .contact__card {
     padding: 0.25rem 1rem;

@@ -55,7 +55,7 @@ const Studies = () => {
               <span className="studies__rounder"></span>
               <span className="studies__line"></span>
             </div>
-            <div className="from_right">
+            <div className="from_bottom">
               <h3 className="studies__title">Computer Science</h3>
               <div className="studies__dep">
                 <div className="studies__ispm"></div>
@@ -108,7 +108,7 @@ const Studies = () => {
               <span className="studies__rounder"></span>
               <span className="studies__line"></span>
             </div>
-            <div className="from_right">
+            <div className="from_bottom">
               <h3 className="studies__title">Baccalauréat</h3>
               <span className="studies__subtitle">Lycée Nanisana</span>
               <p className="studies__description">Science Stream (Series D)</p>

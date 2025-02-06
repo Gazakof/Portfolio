@@ -113,7 +113,7 @@ const Services = () => {
         </div>
 
         <div className="services__content">
-          <div className="from_right from_none">
+          <div className="from_bottom from_none">
             <LuQrCode className="services__icon" />
             <h3 className="services__title">
               {" "}
@@ -122,7 +122,7 @@ const Services = () => {
             </h3>
           </div>
           <span
-            className="services__button from_right from_none"
+            className="services__button from_bottom from_none"
             onClick={() => {
               toggleTab(2);
             }}

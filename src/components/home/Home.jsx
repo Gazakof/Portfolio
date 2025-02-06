@@ -41,7 +41,7 @@ const Home = () => {
         >
           <Social />
 
-          <div className="home__img from_right from_none"></div>
+          <div className="home__img from_bottom from_none"></div>
 
           <Data />
         </div>

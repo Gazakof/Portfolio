@@ -3,7 +3,7 @@ import { LuBadgeCheck } from "react-icons/lu";
 
 const Back = () => {
   return (
-    <div className="skills__content from_right">
+    <div className="skills__content from_left">
       <h3 className="skills__title">Backend developer</h3>
       <div className="skills__box">
         <div className="skills__group">
