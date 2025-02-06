@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: var(--body-color);
+  background-color: var(--color-bg);
 }
 
 .nav {
@@ -18,7 +18,8 @@
 
 .nav__logo,
 .nav__toggle {
-  color: var(--title-color);
+  color: var(--color-title);
+  font-size: 1.25rem;
   font-family: var(--title-font);
   font-weight: var(--font-medium);
 }
@@ -34,7 +35,7 @@
   flex-direction: column;
   align-items: center;
   font-size: var(--normal-font-size);
-  color: var(--title-color);
+  color: var(--color-title);
   font-weight: var(--font-medium);
   transition: 0.3s;
 }
@@ -44,15 +45,21 @@
   align-items: center;
   justify-content: center;
   gap: 0.25rem;
-  background-color: var(--title-color);
-  color: var(--container-color);
+  background-color: var(--color-btn);
+  color: var(--color-box);
   padding: 0.5rem 0.75rem;
   border-radius: 0.5rem;
+  font-size: 0.9rem;
   font-weight: var(--font-medium);
+  transition: 0.3s ease;
+}
+
+.button__download:hover {
+  box-shadow: var(--box-shadow);
 }
 
 .icon__download {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .nav__icon,
@@ -63,8 +70,8 @@
 
 .active-link,
 .nav__link:hover {
-  color: var(--title-color-dark);
-  font-weight: var(--font-semi-bold);
+  font-size: 1.1rem;
+  text-shadow: var(--box-shadow);
 }
 
 @media screen and (max-width: 768px) {
@@ -96,7 +103,7 @@
     bottom: -100%;
     left: 0;
     width: 100%;
-    background-color: var(--body-color);
+    background-color: var(--color-bg);
     padding: 2rem 1.5rem 4rem;
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.2);
     border-radius: 1.5rem 1.5rem 0 0;
@@ -121,7 +128,7 @@
     bottom: 0.5rem;
     font-size: 1.5rem;
     cursor: pointer;
-    color: var(--title-color);
+    color: var(--color-text);
   }
 
   .nav__toggle {

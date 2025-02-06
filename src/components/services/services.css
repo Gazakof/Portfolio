@@ -6,7 +6,7 @@
 .services__content {
   position: relative;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  background-color: var(--container-color);
+  background-color: var(--color-box);
   padding: 5rem 0.5rem 2rem 2.5rem;
 }
 
@@ -39,6 +39,9 @@
 
 .services__button:hover .services__button-icon {
   transform: translateX(0.25rem);
+}
+.services__button:hover {
+  text-shadow: var(--box-shadow);
 }
 
 .services__modal {

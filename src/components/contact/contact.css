@@ -19,28 +19,31 @@
 }
 
 .contact__card {
-  background-color: var(--container-color);
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: var(--color-box);
   padding: 0.5rem;
   border-radius: 0.75rem;
   text-align: center;
+  box-shadow: var(--box-shadow);
 }
 
 .contact__card-icon {
   font-size: 2rem;
-  color: var(--title-color);
+  color: var(--color-icon);
   margin-bottom: 0.25rem;
 }
 
 .contact__card-title {
   font-size: var(--small-font-size);
   font-weight: var(--font-medium);
+  color: var(--color-icon);
 }
 
 .contact__card-data {
   display: block;
   font-size: var(--small-font-size);
   margin-bottom: 0.5rem;
+  color: var(--color-icon);
+  text-shadow: var(--box-shadow);
 }
 
 .contact__button {
@@ -59,6 +62,9 @@
 
 .contact__button:hover .contact__button-icon {
   transform: translate(0.25rem);
+}
+.contact__button:hover {
+  text-shadow: var(--box-shadow);
 }
 
 .contact__form {
@@ -91,7 +97,7 @@
   left: 1.25rem;
   font-size: var(--small-font-size);
   padding: 0.25rem;
-  background-color: var(--body-color);
+  background-color: var(--color-bg);
   z-index: 5;
 }
 

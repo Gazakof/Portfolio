@@ -15,19 +15,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #000;
 }
 
 :root {
   --header-height: 3rem;
 
-  /* Color: Hue, Saturation, Lightness */
-  --hue: 0;
-  --sat: 0%;
-  --title-color: hsl(var(--hue), var(--sat), 15%);
-  --title-color-dark: hsl(var(--hue), var(--sat), 0%);
-  --text-color: hsl(var(--hue), var(--sat), 30%);
-  --body-color: hsl(var(--hue), var(--sat), 95%);
-  --container-color: #fff;
+  /* color */
+  --color-box: #fff;
+  --color-btn: #4d595a;
+  --color-icon: #34495e;
+  --color-bg: #ecf0f1;
+  --color-title: #1e2c3a;
+  --color-text: #131d27;
+  --color-text-light: #20262c;
+
+  /* box shadow */
+  --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 
   /* Font */
   --body-font: "Poppins-regular", sans-resif;
@@ -62,19 +66,6 @@
   --z-modal: 1000;
 }
 
-/* Responsive */
-@media screen and (max-width: 992px) {
-  :root {
-    --big-font-size: 2.75rem;
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1rem;
-    --normal-fon-size: 0.9rem;
-    --small-font-size: 0.75rem;
-    --tiny-font-size: 0.6rem;
-  }
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -89,14 +80,14 @@ textarea {
 
 body {
   width: 100%;
-  background-color: var(--body-color);
+  background-color: var(--color-bg);
   color: var(--text-color);
 }
 
 h1,
 h2,
 h3 {
-  color: var(--title-color);
+  color: var(--color-title);
   font-weight: var(--font-semi-bold);
 }
 
@@ -125,7 +116,8 @@ img {
 
 .section__title {
   font-size: var(--h1-font-size);
-  color: var(--title-color);
+  color: var(--color-text);
+  text-shadow: var(--box-shadow);
 }
 
 .section__subtitle {
@@ -152,19 +144,19 @@ img {
 
 .button {
   display: inline-block;
-  background-color: var(--title-color);
-  color: var(--container-color);
-  padding: 1rem 1.6rem;
+  background-color: var(--color-btn);
+  color: #fff;
+  padding: 1rem 2rem;
   border-radius: 1rem;
   font-weight: var(--font-medium);
 }
 
 .button:hover {
-  background-color: var(--title-color-dark);
+  background-color: var(--color-text);
 }
 
 .button__icon {
-  margin-left: var(--mb-0-5);
+  margin-left: 0.5rem;
 }
 
 .button__felx {

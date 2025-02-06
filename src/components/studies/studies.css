@@ -5,17 +5,18 @@
 .studies__tabs {
   display: flex;
   justify-content: center;
-  margin-bottom: var(--mb-2);
+  margin-bottom: 2rem;
 }
 
 .studies__button {
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
-  color: var(--title-color);
+  color: var(--color-title);
   margin: 0 1rem;
 }
 
 .studies__icon {
+  color: var(--color-icon);
   font-size: 2rem;
   margin-right: 0.25rem;
 }
@@ -33,6 +34,7 @@
 }
 
 .studies__title {
+  color: var(--color-text);
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
 }
@@ -42,19 +44,22 @@
 
 .studies__subtitle {
   display: inline-block;
+  color: var(--color-text);
   font-size: var(--normal-font-size);
   font-weight: var(--font-semi-bold);
-  margin-bottom: var(--mb-1);
+  margin-bottom: 1rem;
 }
 
 .studies__description {
+  color: var(--color-text-light);
+  font-size: 0.9rem;
   font-style: italic;
-  margin-bottom: var(--mb-0-75);
+  margin-bottom: 0.75rem;
 }
 
 .studies__calendar {
   font-size: var(--small-font-size);
-  color: var(--title-color);
+  color: var(--color-text-light);
   display: flex;
   align-items: center;
 }
@@ -87,7 +92,7 @@
   display: inline-block;
   width: 13px;
   height: 13px;
-  background-color: var(--text-color);
+  background-color: var(--color-icon);
   border-radius: 50%;
   transform: translateY(4px);
 }
@@ -96,7 +101,7 @@
   display: block;
   width: 1px;
   height: 100%;
-  background-color: var(--text-color);
+  background-color: var(--color-icon);
   transform: translate(6px, -8px);
 }
 

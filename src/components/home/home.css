@@ -15,19 +15,12 @@
   row-gap: 1rem;
 }
 
-.icon-hello {
-  position: relative;
-  font-size: 1.1rem;
-  margin-left: 5px;
-  bottom: -4px;
-}
-
 .home__social-icon {
   font-size: 1.5rem;
-  color: var(--title-color);
+  color: var(--color-icon);
 }
 .home__social-icon:hover {
-  color: var(--title-color-dark);
+  color: var(--color-text);
 }
 
 .home__title {
@@ -54,7 +47,7 @@
   position: absolute;
   width: 70px;
   height: 1px;
-  background-color: var(--text-color);
+  background-color: var(--color-title);
   left: 0;
   top: 0.9rem;
 }
@@ -75,6 +68,12 @@
   width: 300px;
   height: 360px;
   border-radius: 1rem;
+  transition: 0.5s ease-in-out;
+}
+
+.home__img:hover {
+  transform: scale(1.1);
+  border-radius: 0.25rem;
 }
 
 @media screen and (max-width: 768px) {
