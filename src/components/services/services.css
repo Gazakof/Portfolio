@@ -14,12 +14,12 @@
   display: block;
   font-size: 2rem;
   color: var(--title-color);
-  margin-bottom: var(--mb-1);
+  margin-bottom: 1rem;
 }
 
 .services__title {
   font-size: var(--h3-font-size);
-  margin-bottom: var(--mb-1);
+  margin-bottom: 1rem;
   font-weight: var(--font-medium);
 }
 
@@ -64,9 +64,10 @@
 .services__modal-content {
   width: 500px;
   position: relative;
-  background-color: var(--container-color);
+  background-color: var(--color-bg);
   padding: 4rem 2rem 2rem;
   border-radius: 1.5rem;
+  box-shadow: var(--box-shadow);
 }
 
 .services__modal-close {

@@ -12,6 +12,7 @@ const Contact = () => {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -22,19 +23,26 @@ const Contact = () => {
 
     const form = new FormData();
     form.append("form-name", "contact");
-    Object.keys(formData).forEach((key) => {
-      form.append(key, formData[key]);
-    });
+    form.append("name", formData.name);
+    form.append("email", formData.email);
+    form.append("messagr", formData.message);
 
     try {
-      await fetch("/", {
+      const response = await fetch("/", {
         method: "POST",
         body: form,
       });
-      setSubmitted(true);
-      setFormData({ name: "", email: "", message: "" });
+
+      if (response.ok) {
+        setSubmitted(true);
+        setError(false);
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        throw new Error("Submission failed!");
+      }
     } catch (error) {
-      console.error("Error submitting the form.", error);
+      setError(true);
+      setSubmitted(false);
     }
   };
 
@@ -182,6 +190,11 @@ const Contact = () => {
               }}
             >
               Thank you! Your message has been sent.
+            </p>
+          )}
+          {error && (
+            <p style={{ color: "red", marginTop: "1rem" }}>
+              Failed to send message. Try later.
             </p>
           )}
         </div>

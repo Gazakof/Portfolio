@@ -40,7 +40,7 @@
 
 .contact__card-data {
   display: block;
-  font-size: var(--small-font-size);
+  font-size: 14px;
   margin-bottom: 0.5rem;
   color: var(--color-icon);
   text-shadow: var(--box-shadow);

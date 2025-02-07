@@ -118,7 +118,7 @@ const Services = () => {
             <h3 className="services__title">
               {" "}
               Develop <br />
-              App
+              Mobile App
             </h3>
           </div>
           <span
@@ -145,7 +145,7 @@ const Services = () => {
                   toggleTab(0);
                 }}
               />
-              <h3 className="services__modal-title">Develop App</h3>
+              <h3 className="services__modal-title">Develop Mobile App</h3>
               <p className="services__modal-description"> </p>
               <ul className="services__modal-services grid">
                 <li className="services__modal-service">

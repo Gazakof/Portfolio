@@ -39,14 +39,16 @@
 
 .projects__card-description {
   padding: 1rem;
+  color: var(--color-text-light);
   font-size: var(--small-font-size);
   font-weight: var(--font-normal);
 }
 
 .projects__card-title {
   text-align: center;
+  color: var(--color-text);
   font-size: var(--normal-font-size);
-  font-weight: var(--font-medium);
+  font-weight: var(--font-semi-bold);
 }
 
 .center {
