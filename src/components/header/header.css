@@ -4,7 +4,8 @@
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: var(--color-bg);
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(8px);
 }
 
 .nav {
@@ -96,6 +97,8 @@
   .header {
     top: initial;
     bottom: 0;
+    background-color: var(--color-bg);
+    backdrop-filter: none;
   }
   .nav {
     height: var(--header-height);

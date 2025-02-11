@@ -7,8 +7,9 @@ export const Data = [
   {
     id: 1,
     image: Image1,
-    title: "page Web",
-    description: "Lorem ...",
+    title: "EGame Store",
+    description:
+      "A replica of a game download website, designed with a user-friendly interface to browse and download games easily. It features a structured layout, download buttons, and responsive design for an optional user experience.",
   },
   {
     id: 2,
@@ -22,12 +23,13 @@ export const Data = [
     image: Image3,
     title: "L'Equipe 7",
     description:
-      "An interactive Web application. The user interface is designed intuitively, allowing users to easily navigate between sections and explore each character's abilities",
+      "An interactive Web application. The user interface is designed intuitively, allowing users to easily navigate between sections and explore each character's abilities.",
   },
   {
     id: 4,
     image: Image4,
-    title: "page Web",
-    description: "Lorem ...",
+    title: "Basic Social Media Page",
+    description:
+      "A social media interface that allows users to create posts, view content and interact with other users. Designed with a clean layout and responsive design for smooth navigation.",
   },
 ];

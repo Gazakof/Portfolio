@@ -175,7 +175,7 @@ const Contact = () => {
                 cols={30}
                 rows={10}
                 required
-              />
+              ></textarea>
             </div>
             <button type="submit" className="button button__flex">
               Send Message

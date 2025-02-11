@@ -52,7 +52,7 @@ const Projects = () => {
     >
       <h2 className="section__title from_top from_none"> Projects</h2>
       <span className="section__subtitle from_top from_none">
-        Screenshot of my recent works
+        Showcase of my recent projects
       </span>
 
       <div className="projects__container container from_bottom from_none">

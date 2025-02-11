@@ -4,6 +4,7 @@ import { FaArrowRightLong, FaCode } from "react-icons/fa6";
 import { IoClose } from "react-icons/io5";
 import { LiaCheckCircle } from "react-icons/lia";
 import { LuQrCode } from "react-icons/lu";
+import { MdOutlineSettings } from "react-icons/md";
 
 const Services = () => {
   const [toggleState, setToggleState] = useState(0);
@@ -171,6 +172,65 @@ const Services = () => {
                   <p className="dervices__modal-info">
                     I optimize mobile app performance for better speed and
                     efficiency
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="services__content">
+          <div className="from_bottom from_none">
+            <MdOutlineSettings className="services__icon" />
+            <h3 className="services__title">
+              {" "}
+              Develop <br />
+              REST APIs
+            </h3>
+          </div>
+          <span
+            className="services__button from_bottom from_none"
+            onClick={() => {
+              toggleTab(3);
+            }}
+          >
+            View more
+            <FaArrowRightLong className="services__button-icon" />
+          </span>
+
+          <div
+            className={
+              toggleState === 3
+                ? "services__modal active-modal"
+                : "services__modal"
+            }
+          >
+            <div className="services__modal-content">
+              <IoClose
+                className="services__modal-close"
+                onClick={() => {
+                  toggleTab(0);
+                }}
+              />
+              <h3 className="services__modal-title">Develop REST APIs</h3>
+              <p className="services__modal-description"> </p>
+              <ul className="services__modal-services grid">
+                <li className="services__modal-service">
+                  <LiaCheckCircle className="services__modal-icon" />
+                  <p className="dervices__modal-info">
+                    Design and develop RESTful APIs
+                  </p>
+                </li>
+                <li className="services__modal-service">
+                  <LiaCheckCircle className="services__modal-icon" />
+                  <p className="dervices__modal-info">
+                    Create and optimize database
+                  </p>
+                </li>
+                <li className="services__modal-service">
+                  <LiaCheckCircle className="services__modal-icon" />
+                  <p className="dervices__modal-info">
+                    API security (Authentication, CORS, Rate Limiting)
                   </p>
                 </li>
               </ul>
