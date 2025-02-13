@@ -29,6 +29,15 @@
   --color-text: #131d27;
   --color-text-light: #20262c;
 
+  /*dark theme*/
+  --color-text-dark: #fff;
+  --color-icon-dark: #bac3c6;
+  --color-btn-dark: #34495e;
+  --color-title-dark: #bac3c5;
+  --color-box-dark: #ecf0f1;
+  --color-bg-dark: #131d27;
+  --color-text-light-dark: #ecf0f1;
+
   /* box shadow */
   --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 
@@ -181,6 +190,9 @@ img {
   }
   .section__subtitle {
     margin-bottom: 1rem;
+  }
+  .footer {
+    display: none;
   }
 }
 
