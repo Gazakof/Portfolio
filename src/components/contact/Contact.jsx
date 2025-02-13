@@ -25,7 +25,7 @@ const Contact = () => {
     form.append("form-name", "contact");
     form.append("name", formData.name);
     form.append("email", formData.email);
-    form.append("messagr", formData.message);
+    form.append("message", formData.message);
 
     try {
       const response = await fetch("/", {
@@ -162,7 +162,7 @@ const Contact = () => {
             </div>
 
             <div className="contact__form-container contact__form-area">
-              <label for="message" className="contact__form-tag">
+              <label htmlFor="message" className="contact__form-tag">
                 Project
               </label>
               <textarea
